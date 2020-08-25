@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/shelf/index",
+    "pages/classify/index",
+    "pages/intro/index",
+    "pages/read/index",
+    "pages/search/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#007AFF",
+    "backgroundColor": "#FFFFFF"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap80.json"
+}

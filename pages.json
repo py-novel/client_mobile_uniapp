@@ -1,0 +1,28 @@
+{
+	"pages": [
+		{
+			"path": "pages/shelf/index",
+			"style": {
+				"navigationBarTitleText": "公羊阅读"
+			}
+		},	
+		{
+			"path": "pages/classify/index"
+		},
+		{
+			"path": "pages/intro/index"
+		},
+		{
+			"path": "pages/read/index"
+		},
+		{
+			"path": "pages/search/index"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#FFFFFF"
+	}
+}
