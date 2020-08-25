@@ -24,5 +24,21 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#007AFF",
 		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/shelf/index",
+				"text": "书架",
+				"iconPath": "static/book-shelf.png",
+				"selectedIconPath": "static/book-shelf-selected.png"
+			},
+			{
+				"pagePath": "pages/classify/index",
+				"text": "书屋",
+				"iconPath": "static/book-shop.png",
+				"selectedIconPath": "static/book-shop-selected.png"
+			}
+		]
 	}
 }

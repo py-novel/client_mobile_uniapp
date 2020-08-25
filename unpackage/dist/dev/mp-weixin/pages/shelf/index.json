@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "公羊阅读",
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-icons": "/components/uni-icons/uni-icons"
+  }
 }

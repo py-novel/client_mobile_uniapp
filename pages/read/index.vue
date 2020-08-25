@@ -1,6 +1,6 @@
 <template>
 	<view class="container">
-		Read Page
+		<button type="default" @click="goShelfPage">返回首页</button>
 	</view>
 </template>
 
@@ -13,7 +13,11 @@
 		},
 		props: [],
 		methods: {
-
+			goShelfPage() {
+				uni.reLaunch({
+					url: '../shelf/index'
+				})
+			}
 		},
 	}
 </script>

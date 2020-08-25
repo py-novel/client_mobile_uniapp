@@ -35,7 +35,7 @@
     "packNpmRelationList": []
   },
   "compileType": "miniprogram",
-  "libVersion": "",
+  "libVersion": "2.10.4",
   "appid": "touristappid",
   "projectname": "client_mobile_uniapp",
   "simulatorType": "wechat",

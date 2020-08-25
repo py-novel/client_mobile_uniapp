@@ -1,6 +1,7 @@
 <template>
 	<view class="container">
-		Classify Page
+		<button type="default" @click="goIntroPage">跳转到详情页面</button>
+		<button type="default" @click="goSearchPage">跳转到搜索页面</button>
 	</view>
 </template>
 
@@ -13,7 +14,17 @@
 		},
 		props: [],
 		methods: {
-
+			goIntroPage() {
+				uni.navigateTo({
+					url: '../intro/index'
+				})
+			},
+			
+			goSearchPage() {
+				uni.navigateTo({
+					url: '../search/index'
+				})
+			},
 		},
 	}
 </script>
