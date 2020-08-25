@@ -1,1 +1,0 @@
-<view class="container"><button type="default" data-event-opts="{{[['tap',[['goIntroPage',['$event']]]]]}}" bindtap="__e">跳转到详情页面</button><button type="default" data-event-opts="{{[['tap',[['goClassifyPage',['$event']]]]]}}" bindtap="__e">跳转到分类页面</button></view>

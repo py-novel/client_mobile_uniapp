@@ -1,1 +1,0 @@
-<view class="container"><button type="default" data-event-opts="{{[['tap',[['goShelfPage',['$event']]]]]}}" bindtap="__e">返回首页</button></view>
