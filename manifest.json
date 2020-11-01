@@ -37,7 +37,16 @@
                 ]
             },
             "ios" : {},
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "ad" : {}
+            },
+            "splashscreen" : {
+                "iosStyle" : "common"
+            }
+        },
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : false,
+            "waiting" : false
         }
     },
     "quickapp" : {},
@@ -46,5 +55,25 @@
         "setting" : {
             "urlCheck" : true
         }
+    },
+    "h5" : {
+        "title" : "公羊阅读",
+        "router" : {
+            "mode" : "history"
+        },
+        "devServer" : {
+            "https" : false,
+            "proxy" : {
+                "/reptile" : {
+                    "target" : "https://novel.dkvirus.top/reptile",
+                    "changeOrigin" : true,
+                    "secure" : false,
+                    "pathRewrite" : {
+                        "^/reptile" : ""
+                    }
+                }
+            }
+        },
+        "domain" : "novel.dkvirus.top"
     }
 }

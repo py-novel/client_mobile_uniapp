@@ -1,22 +1,32 @@
 {
 	"pages": [
 		{
-			"path": "pages/shelf/index",
+			"path": "pages/home/index",
 			"style": {
-				"navigationBarTitleText": "公羊阅读"
+				"navigationStyle":"custom",
+				"navigationBarBackgroundColor": "#FFFFFF"
 			}
 		},	
 		{
-			"path": "pages/classify/index"
+			"path": "pages/read/index",
+			"style": {
+				"navigationStyle":"custom",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
 		},
 		{
-			"path": "pages/intro/index"
+			"path": "pages/intro/index",
+			"style": {
+				"navigationStyle":"custom",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
 		},
 		{
-			"path": "pages/read/index"
-		},
-		{
-			"path": "pages/search/index"
+			"path": "pages/search/index",
+			"style": {
+				"navigationStyle":"custom",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
 		}
 	],
 	"globalStyle": {
@@ -24,21 +34,5 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#007AFF",
 		"backgroundColor": "#FFFFFF"
-	},
-	"tabBar": {
-		"list": [
-			{
-				"pagePath": "pages/shelf/index",
-				"text": "书架",
-				"iconPath": "static/book-shelf.png",
-				"selectedIconPath": "static/book-shelf-selected.png"
-			},
-			{
-				"pagePath": "pages/classify/index",
-				"text": "书屋",
-				"iconPath": "static/book-shop.png",
-				"selectedIconPath": "static/book-shop-selected.png"
-			}
-		]
 	}
 }
