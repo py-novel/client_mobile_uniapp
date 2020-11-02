@@ -32,6 +32,14 @@
 				<view class="flex-1 align-center bg-color-6190e8 color-fff height-100"
 					v-else @click="joinShelf">加入书架</view>
 			</view>
+			
+			<uni-drawer ref="chapterDrawer" :width="300">
+				<a-chapter-list
+					:bookName="bookName"
+					:bookUrl="bookUrl"
+					:clickable="false"
+				></a-chapter-list>
+			</uni-drawer>
 		</template>
 	</view>
 </template>
@@ -53,14 +61,6 @@ export default {
 			classifyName: '',		// 分类名称
 			firstChapterUrl: '',	// 第一章节url地址
 			lastUpdateTime: '',		// 最后更新时间
-			
-			// "authorName": "黑色枷锁",
-			// "bookCoverUrl": "https://img.xinqingdou.com/86856/882219.jpg",
-			// "bookIntro": "\r\n      \t盗门三只手，千门两颗心，兰花无真情，红门手非真。对一个赌徒来说，天堂还是地狱，区别只在于输赢结果。其实人生就像是一场赌博，没有人知道明天会怎样，成败兴衰往往只在一念之间。有人一夜倾家荡产，有人一夜发达暴富，其实关键不在于运气，而是在于能否抓住庄家放水的机会……        ",
-			// "bookName": "我的老千江湖",
-			// "classifyName": "都市生活",
-			// "firstChapterUrl": "https://www.qingdou.net/86856/2215419.html",
-			// "lastUpdateTime": "2020-10-29 23:27"
 		}
 	},
 	onLoad(options) {
@@ -97,7 +97,7 @@ export default {
 		
 		/* 查看目录 */
 		showChapterModal() {
-			
+			this.$refs.chapterDrawer.open()
 		},
 		
 		async findNovel() {

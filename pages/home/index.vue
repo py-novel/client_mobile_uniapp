@@ -55,8 +55,11 @@
 		},
 		methods: {
 			goReadPage(novel) {
+				let params = 'chapterUrl=' + novel.recentChapterUrl
+				params += '&authorName=' + novel.authorName
+				params += '&bookName=' + novel.bookName
 				uni.navigateTo({
-					url: '../read/index?chapterUrl=' + novel.recentChapterUrl
+					url: '../read/index?' + params
 				})
 			},
 			
@@ -87,24 +90,5 @@
 	}
 </script>
 
-<style lang="scss">
-	.container {
-		padding: 20px;
-		font-size: 14px;
-		line-height: 24px;
-	}
-	
-	.shelf_header {
-		display: flex;
-		
-		.shelf_header-avatar {
-			width: 60rpx;
-		}
-		.shelf_header-nickname {
-			flex: 1;
-		}
-		.shelf_header-btn {
-			width: 60rpx;
-		}
-	}
+<style>
 </style>
