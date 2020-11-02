@@ -37,7 +37,7 @@
 				<a-chapter-list
 					:bookName="bookName"
 					:bookUrl="bookUrl"
-					:clickable="false"
+					@click="clickChapter"
 				></a-chapter-list>
 			</uni-drawer>
 		</template>
@@ -46,7 +46,7 @@
 
 <script>
 import request from '../../utils/request.js'
-import { showConfirmModal } from '../../utils/uniapi.js'
+import { showConfirmModal, showAlertModal } from '../../utils/uniapi.js'
 	
 export default {
 	data() {
@@ -78,6 +78,10 @@ export default {
 			uni.reLaunch({
 				url: '../search/index'
 			})
+		},
+		
+		clickChapter() {
+			showAlertModal('要先加入书架才能阅读哦~')
 		},
 		
 		/* 将小说加入书架 */

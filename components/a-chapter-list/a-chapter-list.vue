@@ -158,12 +158,10 @@ export default {
 			const chapterUrl = this.chapterUrl
 			const chapter = chapterList.find(item => item.chapterUrl == chapterUrl)
 			if (chapter) this.chapterId = chapter.id
-			console.log('chapterId', this.chapterId)
 			
 			this.total = total
 			this.chapterList = chapterList
 			this.indexList = indexList
-			console.log('result', result)
 		},
 	}
 }

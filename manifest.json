@@ -59,7 +59,7 @@
     "h5" : {
         "title" : "公羊阅读",
         "router" : {
-            "mode" : "history"
+            "mode" : "hash"
         },
         "devServer" : {
             "https" : false,
